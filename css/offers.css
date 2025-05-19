@@ -1,0 +1,320 @@
+       body {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            overflow-x: hidden;
+        }
+        /* Header Styles */
+        .header {
+            background: linear-gradient(90deg, #003087 0%, #00c4cc 100%);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+        }
+        .header nav a {
+            color: #fff;
+            font-weight: 500;
+            margin-left: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .header nav a:hover {
+            color: #e0f2fe;
+        }
+        .header .btn-login {
+            background-color: #fff;
+            color: #003087;
+            border: 1px solid #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        .header .btn-login:hover {
+            background-color: #00c4cc;
+            color: #fff;
+        }
+        /* Hero Section with Carousel */
+           .hero-carousel {
+            margin-top: 70px; /* لمنع تداخل الهيدر */
+        }
+        
+        .hero-carousel .carousel-item {
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero-carousel .carousel-item:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero-carousel .carousel-caption {
+            bottom: 30%;
+            text-align: right;
+        }
+        
+        .hero-carousel .carousel-caption h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-carousel .carousel-caption p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-carousel .carousel-indicators {
+            bottom: 20%;
+        }
+        
+        .hero-carousel .carousel-control-prev,
+        .hero-carousel .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-inner{
+            background-image: url(../image/Samsung-Galaxy-S24-FE.webp);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-carousel .carousel-item {
+                height: 400px;
+            }
+            
+            .hero-carousel .carousel-caption h3 {
+                font-size: 2rem;
+            }
+            
+            .hero-carousel .carousel-caption p {
+                font-size: 1rem;
+            }
+        }
+        /* Deals Section */
+        .deals-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            color: #003087;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: #00c4cc;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .deal-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .deal-card:hover {
+            transform: translateY(-8px);
+        }
+        .deal-img {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .deal-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        .deal-card:hover .deal-img img {
+            opacity: 1;
+        }
+        .deal-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .deal-content h3 {
+            font-size: 1.5rem;
+            color: #003087;
+            margin-bottom: 0.5rem;
+        }
+        .deal-content .original-price {
+            text-decoration: line-through;
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+        .deal-content .discount-price {
+            font-size: 1.25rem;
+            color: #e63946;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .deal-content .btn {
+            background-color: #00c4cc;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .deal-content .btn:hover {
+            background-color: #008b93;
+        }
+        /* Categories Section */
+        .categories-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #e0f2fe 0%, #f8f9fa 100%);
+        }
+        .category-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        .category-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+        .category-card h4 {
+            font-size: 1.25rem;
+            color: #003087;
+        }
+        /* Why Choose Us Section */
+        .why-choose-us-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        .why-card {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .why-card:hover {
+            transform: translateY(-5px);
+        }
+        .why-card i {
+            font-size: 2.5rem;
+            color: #00c4cc;
+            margin-bottom: 1rem;
+        }
+        .why-card h4 {
+            font-size: 1.25rem;
+            color: #003087;
+            margin-bottom: 0.5rem;
+        }
+        .why-card p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e0f2fe 100%);
+        }
+        .testimonial-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        .testimonial-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .testimonial-card .author {
+            font-weight: 700;
+            color: #003087;
+            font-size: 0.9rem;
+        }
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(90deg, #003087 0%, #00c4cc 100%);
+            color: #fff;
+            padding: 3rem 0;
+        }
+        .footer a {
+            color: #e0f2fe;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        .footer h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin-bottom: 0.5rem;
+        }
+        .footer .social-links a {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+        .footer .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 1rem;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero-section .carousel-item {
+                height: 60vh;
+            }
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            .hero-section p {
+                font-size: 1rem;
+            }
+            .deal-img {
+                height: 180px;
+            }
+            .header nav {
+                display: none;
+            }
+            .footer .row > div {
+                margin-bottom: 2rem;
+            }
+        }
