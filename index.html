@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styel.css">
+    <title>متجر إلكتروني</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo" style="color: blue;">متجرنا</div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart" style="color: black;"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="title" style="padding-top: 40px;">متجر المنتجات الإلكترونية</h1>
+        
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="ابحث عن منتج...">
+            <select id="filterPrice">
+                <option value="">ترتيب حسب السعر</option>
+                <option value="asc">من الأقل للأعلى</option>
+                <option value="desc">من الأعلى للأقل</option>
+            </select>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="inputProduct" placeholder="ادخل اسم المنتج">
+            <button id="addBtn" disabled>إضافة منتج</button>
+        </div>
+        
+        <p id="count">عدد المنتجات: 5</p>
+        
+        <div id="content" class="products-list"></div>
+    </div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>سلة التسوق</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                الإجمالي: <span id="cartTotal">0</span>$
+            </div>
+            <button class="checkout-btn">إتمام الشراء</button>
+        </div>
+    </div>
+
+    <script src="java script/main.js"></script>
+</body>
+</html>
