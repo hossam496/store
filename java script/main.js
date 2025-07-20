@@ -155,7 +155,6 @@ addBtn.addEventListener('click', () => {
                 name: result.value.name,
                 price: result.value.price,
                 desc: "the new mobile",
-                image: "https://via.placeholder.com/150" // يمكنك إضافة صورة افتراضية
             })
             drow()
             count.innerHTML = `عدد المنتجات: ${allProducts.length}`
